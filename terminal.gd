@@ -1,38 +1,30 @@
-extends Terminal # Mantendo a base que você já tem
+extends Control
+
+@onready var display = $Display
 
 func _ready():
-	clear()
-	grab_focus()
-	# Estética verde terminal (ANSI escape codes para cores)
-	write("\u001b[32m[ SISTEMA ARKHAM - ACESSO RESTRITO ]\u001b[0m\n")
-	write("Carregando dossiê investigativo... [OK]\n")
-	write("Digite 'logs' ou 'squad' para iniciar.\n\n> ")
-	data_sent.connect(_on_terminal_data_sent)
+	display.clear()
+	_print_to_screen("[color=#00FF41][ SISTEMA ARKHAM - INTERFACE DE PONTEIRO ][/color]")
+	_print_to_screen("Aguardando seleção do operador...")
 
-func _on_terminal_data_sent(data: PackedByteArray):
-	var entrada = data.get_string_from_utf8().strip_edges().to_lower()
-	if entrada == "": return
+# Conecte o sinal 'pressed' de cada botão a estas funções:
 
-	match entrada:
-		"ajuda":
-			write("\nCOMANDOS: logs, squad, limpar, sair")
-		"squad":
-			write("\n[CONTROLE DE PESSOAL OPERACIONAL]:")
-			write("\n- Dyane, John, Joshua, Mariana, Owen, Seraphyne, Shane: [VIVOS]") [cite: 73, 74, 75, 76, 77, 78, 79, 80]
-			write("\n- Oliver, Oscar, Ted, Walt: [CONEXÃO PERDIDA/MORTO]") [cite: 81, 82, 83, 84]
-		"logs":
-			write("\nREGISTROS DISPONÍVEIS:")
-			write("\n1. system_boot.log\n2. umbral_contact.log\n3. observer_incident.log") [cite: 1, 11, 17]
-			write("\nDigite o número do log para ler.")
-		"1":
-			write("\n[LOG 1]: SISTEMA ARKHAM - RESUMÃO PARA OS NOVATOS.") 
-		"2":
-			write("\n[LOG 2]: CONTATO UMBRAL. Grupo perseguido por um Lobo do Umbral.") [cite: 15, 16]
-		"3":
-			write("\n[LOG 3]: EVENTO OBSERVADOR. Oscar sob influência. Conflito fatal: Oscar [MORTO].") [cite: 18, 19, 23]
-		"limpar":
-			clear()
-		_:
-			write("\nERRO: Comando '" + entrada + "' não reconhecido pelo Kernel Codex.")
-	
-	write("\n\n> ")
+func _on_btn_logs_pressed():
+	display.clear()
+	_print_to_screen("[ REGISTROS DISPONÍVEIS ]")
+	_print_to_screen("1. system_boot.log: Resumo inicial [cite: 1, 3]")
+	_print_to_screen("2. umbral_contact.log: Incidente Lobo [cite: 11, 16]")
+	_print_to_screen("3. observer_incident.log: Baixa de Oscar [cite: 17, 23]")
+
+func _on_btn_squad_pressed():
+	display.clear()
+	_print_to_screen("[ CONTROLE DE PESSOAL OPERACIONAL ]")
+	_print_to_screen("- VIVOS: Dyane, John, Joshua, Mariana, Owen, Seraphyne, Shane [cite: 74, 75, 76, 77, 78, 79, 80]")
+	_print_to_screen("- MORTOS: Oliver, Oscar, Ted, Walt [cite: 81, 82, 83, 84]")
+
+func _on_btn_limpar_pressed():
+	display.clear()
+	_print_to_screen("Terminal resetado.")
+
+func _print_to_screen(text_to_add: String):
+	display.append_text("> " + text_to_add + "\n")
