@@ -1,0 +1,9 @@
+[gd_resource type="Shortcut" format=3 uid="uid://h7ocj5uhp6b0"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_emaic"]
+shift_pressed = true
+ctrl_pressed = true
+keycode = 67
+
+[resource]
+events = [SubResource("InputEventKey_emaic")]
