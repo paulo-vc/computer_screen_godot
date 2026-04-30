@@ -1,39 +1,38 @@
-extends Terminal
+extends Terminal # Mantendo a base que você já tem
 
 func _ready():
-	# 1. Limpa o terminal e foca o cursor nele
 	clear()
 	grab_focus()
-	
-	# 2. Escreve uma mensagem de boot estilizada (usando cores ANSI)
-	# \u001b[32m é o código para VERDE, \u001b[0m reseta a cor
-	write("\u001b[32m[ ACESSANDO NÚCLEO CODEX... ]\u001b[0m\n")
-	write("Engenharia de Sistemas UEMG - Terminal Ativo.\n")
-	write("Digite 'ajuda' para listar comandos.\n\n> ")
-
-	# 3. Conecta o sinal de envio de dados (quando você digita e dá Enter)
-	# O sinal 'data_sent' é nativo do addon GodotXTerm
+	# Estética verde terminal (ANSI escape codes para cores)
+	write("\u001b[32m[ SISTEMA ARKHAM - ACESSO RESTRITO ]\u001b[0m\n")
+	write("Carregando dossiê investigativo... [OK]\n")
+	write("Digite 'logs' ou 'squad' para iniciar.\n\n> ")
 	data_sent.connect(_on_terminal_data_sent)
 
 func _on_terminal_data_sent(data: PackedByteArray):
-	# Transforma os bytes recebidos em string
-	var entrada = data.get_string_from_utf8().strip_edges()
-	
-	if entrada == "":
-		return
+	var entrada = data.get_string_from_utf8().strip_edges().to_lower()
+	if entrada == "": return
 
-	# Lógica de comandos simples
-	match entrada.to_lower():
+	match entrada:
 		"ajuda":
-			write("\nComandos disponíveis: status, limpar, sobre")
-		"status":
-			write("\n[SISTEMA]: Memória estável. Banco de dados RPG carregado.")
+			write("\nCOMANDOS: logs, squad, limpar, sair")
+		"squad":
+			write("\n[CONTROLE DE PESSOAL OPERACIONAL]:")
+			write("\n- Dyane, John, Joshua, Mariana, Owen, Seraphyne, Shane: [VIVOS]") [cite: 73, 74, 75, 76, 77, 78, 79, 80]
+			write("\n- Oliver, Oscar, Ted, Walt: [CONEXÃO PERDIDA/MORTO]") [cite: 81, 82, 83, 84]
+		"logs":
+			write("\nREGISTROS DISPONÍVEIS:")
+			write("\n1. system_boot.log\n2. umbral_contact.log\n3. observer_incident.log") [cite: 1, 11, 17]
+			write("\nDigite o número do log para ler.")
+		"1":
+			write("\n[LOG 1]: SISTEMA ARKHAM - RESUMÃO PARA OS NOVATOS.") 
+		"2":
+			write("\n[LOG 2]: CONTATO UMBRAL. Grupo perseguido por um Lobo do Umbral.") [cite: 15, 16]
+		"3":
+			write("\n[LOG 3]: EVENTO OBSERVADOR. Oscar sob influência. Conflito fatal: Oscar [MORTO].") [cite: 18, 19, 23]
 		"limpar":
 			clear()
-		"sobre":
-			write("\nCodex Terminal v1.0 - Desenvolvido para gestão de RPG.")
 		_:
-			write("\nComando desconhecido: " + entrada)
+			write("\nERRO: Comando '" + entrada + "' não reconhecido pelo Kernel Codex.")
 	
-	# Pula linha e coloca o prompt novamente
 	write("\n\n> ")
