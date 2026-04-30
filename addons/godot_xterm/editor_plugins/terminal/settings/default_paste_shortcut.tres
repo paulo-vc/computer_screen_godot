@@ -1,9 +1,0 @@
-[gd_resource type="Shortcut" format=3 uid="uid://l1cwhgsbe2r1"]
-
-[sub_resource type="InputEventKey" id="InputEventKey_sihkr"]
-shift_pressed = true
-ctrl_pressed = true
-keycode = 86
-
-[resource]
-events = [SubResource("InputEventKey_sihkr")]
