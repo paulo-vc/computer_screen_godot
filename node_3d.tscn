@@ -2,17 +2,27 @@
 
 [ext_resource type="Texture2D" uid="uid://8c3gpdk1fits" path="res://assets/icon.svg" id="1_a202f"]
 [ext_resource type="Script" uid="uid://q7mo41m70yyf" path="res://computer.gd" id="1_noarx"]
+[ext_resource type="Texture2D" uid="uid://cgpl8harra8ep" path="res://assets/plastic-texture2.jpg" id="2_i5arm"]
 [ext_resource type="Script" uid="uid://dme4efv6gtju3" path="res://player_camera.gd" id="3_a0tk4"]
 [ext_resource type="Shader" uid="uid://be8ub440872eu" path="res://node_3d.gdshader" id="3_r3fl7"]
 [ext_resource type="AudioStream" uid="uid://dpi3502a2tg66" path="res://assets/bg_ost.mp3" id="5_jka67"]
+[ext_resource type="PackedScene" uid="uid://bl06ylxt6govy" path="res://assets/vintage_keyboard.glb" id="7_wc5p8"]
+[ext_resource type="Script" uid="uid://dl36rl8rocvfm" path="res://ceilling_light.gd" id="8_jsk3o"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_noarx"]
-albedo_color = Color(0, 0, 0, 1)
+albedo_color = Color(0.88235295, 0.83137256, 0.654902, 1)
+albedo_texture = ExtResource("2_i5arm")
 metallic = 0.65
 metallic_specular = 0.7
+roughness = 0.65
 emission_enabled = true
-emission = Color(0.12083047, 0.13286975, 0, 1)
-emission_energy_multiplier = 0.92
+emission = Color(0.067964286, 0.07615737, 1.8049032e-08, 1)
+emission_energy_multiplier = 0.1
+normal_enabled = true
+normal_scale = -16.0
+ao_enabled = true
+ao_light_affect = 1.0
+uv1_scale = Vector3(0.66, 0.66, 0.66)
 
 [sub_resource type="QuadMesh" id="QuadMesh_a0tk4"]
 resource_local_to_scene = true
@@ -135,13 +145,19 @@ data = PackedVector3Array(-0.24059999, 0.29999998, 0.0026, -0.3962, 0.29999998, 
 sky_material = SubResource("ProceduralSkyMaterial_a0tk4")
 
 [sub_resource type="Environment" id="Environment_jka67"]
-background_mode = 2
+background_mode = 1
 background_energy_multiplier = 0.2
 sky = SubResource("Sky_r3fl7")
 ambient_light_source = 3
 glow_enabled = true
 glow_intensity = 0.8
 glow_blend_mode = 2
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0
+
+[sub_resource type="FogMaterial" id="FogMaterial_wc5p8"]
+density = 0.2
+albedo = Color(1, 1, 0.7647059, 1)
 
 [node name="Node3D" type="Node3D" unique_id=299344911]
 
@@ -221,7 +237,8 @@ mesh = SubResource("ArrayMesh_jsk3o")
 shape = SubResource("ConcavePolygonShape3D_jka67")
 
 [node name="player_camera" type="Camera3D" parent="." unique_id=1909776288]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.47037947)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.69118977)
+fov = 53.29761
 script = ExtResource("3_a0tk4")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=405820646]
@@ -231,3 +248,28 @@ environment = SubResource("Environment_jka67")
 stream = ExtResource("5_jka67")
 volume_db = -15.973
 autoplay = true
+
+[node name="ceilling light" type="SpotLight3D" parent="." unique_id=461761285]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 3.3718445, -2.854868)
+light_energy = 10.0
+shadow_enabled = true
+spot_range = 5.35
+spot_attenuation = 3.91
+spot_angle = 30.15
+script = ExtResource("8_jsk3o")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=459235218]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0.563365, 0.8548811)
+light_color = Color(1, 1, 0, 1)
+light_energy = 0.05
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=81097771]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34392652, -0.83282304)
+
+[node name="Keyboard" parent="." unique_id=270172726 instance=ExtResource("7_wc5p8")]
+transform = Transform3D(0.005, 0, 0, 0, 0.004919472, 0.00089375343, 0, -0.00089375343, 0.004919472, 0.0044265464, -0.24616203, 0.3049616)
+
+[node name="FogVolume" type="FogVolume" parent="." unique_id=1715156229]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.95657945, -2.8812451)
+shape = 1
+material = SubResource("FogMaterial_wc5p8")
