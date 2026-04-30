@@ -1,6 +1,5 @@
 [gd_scene format=4 uid="uid://da2vcotl4bum6"]
 
-[ext_resource type="Texture2D" uid="uid://8c3gpdk1fits" path="res://assets/icon.svg" id="1_a202f"]
 [ext_resource type="Script" uid="uid://q7mo41m70yyf" path="res://computer.gd" id="1_noarx"]
 [ext_resource type="Texture2D" uid="uid://cgpl8harra8ep" path="res://assets/plastic-texture2.jpg" id="2_i5arm"]
 [ext_resource type="Script" uid="uid://dme4efv6gtju3" path="res://player_camera.gd" id="3_a0tk4"]
@@ -187,7 +186,7 @@ shape = SubResource("ConcavePolygonShape3D_noarx")
 
 [node name="SubViewport" type="SubViewport" parent="Computer" unique_id=410478898]
 
-[node name="Control" type="Control" parent="Computer/SubViewport" unique_id=701354575]
+[node name="Terminal" type="Control" parent="Computer/SubViewport" unique_id=701354575]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -195,29 +194,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TabContainer" type="TabContainer" parent="Computer/SubViewport/Control" unique_id=1508642751]
-layout_mode = 0
-offset_right = 163.0
-offset_bottom = 159.0
-current_tab = 0
-
-[node name="TextureRect" type="TextureRect" parent="Computer/SubViewport/Control/TabContainer" unique_id=312074482]
-layout_mode = 2
-texture = ExtResource("1_a202f")
-metadata/_tab_index = 0
-
-[node name="TextureRect2" type="TextureRect" parent="Computer/SubViewport/Control/TabContainer" unique_id=1991050777]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 1
-
-[node name="TextureRect3" type="TextureRect" parent="Computer/SubViewport/Control/TabContainer" unique_id=159837054]
-visible = false
-layout_mode = 2
-texture = ExtResource("1_a202f")
-metadata/_tab_index = 2
-
-[node name="ColorRect" type="ColorRect" parent="Computer/SubViewport/Control" unique_id=1594787251]
+[node name="ColorRect" type="ColorRect" parent="Computer/SubViewport/Terminal" unique_id=1594787251]
 material = SubResource("ShaderMaterial_jka67")
 layout_mode = 1
 anchors_preset = 15
@@ -226,6 +203,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+
+[node name="Control" type="Control" parent="Computer/SubViewport/Terminal" unique_id=80244102]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="Screen" type="MeshInstance3D" parent="Computer" unique_id=1678533972]
 transform = Transform3D(0.5, -4.371139e-08, -7.54979e-08, -4.371139e-08, -0.5, 6.600236e-15, -7.54979e-08, 0, -0.5, -0.0001578778, 0, 0.20966452)
