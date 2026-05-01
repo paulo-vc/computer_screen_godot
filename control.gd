@@ -24,33 +24,31 @@ var attachment_data = [
 	{
 		"imagem": "",
 		"texto": "[center][b][color=green]SUJEITOS COM CONHECIMENTO DO UMBRAL[/color][/b]
-	[color=green]________________________________________________[/color]
 
-	[b][color=green]CATEGORIA A: APOIO CONSTANTE[/color][/b]
-	> Diretor Crawford
-	> Mike Graham
-	> Alex Kralie
+		[b][color=green]CATEGORIA A: APOIO CONSTANTE[/color][/b]
+		> Diretor Crawford
+		> Mike Graham
+		> Alex Kralie
 
-	[color=green]________________________________________________[/color]
+		[b][color=green]CATEGORIA B: FONTES INATIVAS[/color][/b]
+		> Padre Malthus
+		> Elliot Vance
+		> Gabriel Oliveira
 
-	[b][color=green]CATEGORIA B: FONTES INATIVAS[/color][/b]
-	> Padre Malthus
-	> Elliot Vance
-	> Gabriel Oliveira
-
-	[color=green]________________________________________________[/color]
-
-	[b][color=green]CATEGORIA C: USUÁRIOS E ENVOLVIDOS[/color][/b]
-	> Elias Ward
-	> Chadwick
-	> Grupo das Chaves (Rowan, Rato, Mira, etc.)
-	________________________________________________[/center]"
+		[b][color=green]CATEGORIA C: USUÁRIOS E ENVOLVIDOS[/color][/b]
+		> Elias Ward
+		> Chadwick
+		> Grupo das Chaves (Rowan, Rato, Mira, etc.)
+		[/center]"
 	},
 	{
 		"imagem": "",
 		"texto": "[center][b][color=green]Umbral[/color][/b][/center]
+		
 		> O umbral é como uma realidade paralela da nossa, intervindo constantemente na nossa realidade. Ele afeta ambientes e criaturas.
+		
 		[center][b][color=green]Os Sete Elementos[/color][/b][/center]
+		
 		[color=#008080]Owen Parker - Vetor[/color]
 		[color=yellow]Shane - Abscôndito[/color]
 		[color=red]Joshua - Hemogeia[/color]
@@ -82,10 +80,12 @@ var attachment_data = [
 	{
 		"imagem": "",
 		"texto": "[center][b][color=green]Conexões[/color][/b][/center]
+		
 		> Cada elemento escolheu um de nós e essa conexão não é algo muito comum de se acontecer. 
 		> Mike, por exemplo, não possui ligação com nenhum elemento, mesmo nos ajudando constantemente a combater as criaturas.
 		
 		[center][b][color=green]Ascendência Cósmica:[/color][/b][/center]
+		
 		> Evento onde nos conectamos com o Umbral e com nosso próprio elemento. 
 		> Funciona como uma conexão do Umbral dentro de nossa mente, visualizando uma dimensão onde o elemento correspondente predomina.
 		"
@@ -105,101 +105,101 @@ var log_slides = [
 	
 	"""	[center][b][color=green]RELATÓRIO INICIAL: INCIDENTE ARKHAM WOLVES[/color][/b][/center]
 
-[b]DATA:[/b] 01 de Fevereiro, 2000
-[b]SUJEITOS:[/b] [color=#ffff00]Oscar[/color], [color=#ffff00]Shane[/color], [color=#ff0000]Joshua[/color] e [color=#add8e6]"Oliver"[/color].
-> Estudantes comuns na escola de Arkham. 
-> [color=#008080]Owen Parker[/color] é um aluno novo transferido.
+	[b]DATA:[/b] 01 de Fevereiro, 2000
+	[b]SUJEITOS:[/b] [color=#ffff00]Oscar[/color], [color=#ffff00]Shane[/color], [color=#ff0000]Joshua[/color] e [color=#add8e6]"Oliver"[/color].
+	> Estudantes comuns na escola de Arkham. 
+	> [color=#008080]Owen Parker[/color] é um aluno novo transferido.
 
-[center][b][color=green]SUB-ARQUIVO: CASO SENISE[/color][/b][/center]
+	[center][b][color=green]SUB-ARQUIVO: CASO SENISE[/color][/b][/center]
 
-> [color=#add8e6]Oliver[/color] apresentou mudança de comportamento. 
-> Uma entidade do [color=#4b0082][b]Umbral[/b][/color] reivindicou a posse do corpo hospedeiro e se autonomeou [color=#add8e6]Senise[/color].""",
+	> [color=#add8e6]Oliver[/color] apresentou mudança de comportamento. 
+	> Uma entidade do [color=#4b0082][b]Umbral[/b][/color] reivindicou a posse do corpo hospedeiro e se autonomeou [color=#add8e6]Senise[/color].""",
 
-"""[center][b][color=green]SUB-ARQUIVO: ECO DE CHADWICK[/color][/b][/center]
+	"""[center][b][color=green]SUB-ARQUIVO: ECO DE CHADWICK[/color][/b][/center]
 
-> Após uma súbita aparição do [color=#4b0082][b]Umbral[/b][/color] na realidade, o grupo foi perseguido por uma criatura.
-> A criatura demonstrava traços de inteligência e se revelou ser um eco de Chadwick (Aluno desaparecido).
-> Logo após, a unidade [color=#ffc0cb]Dyane[/color] integrou-se ao grupo.
-""",
+	> Após uma súbita aparição do [color=#4b0082][b]Umbral[/b][/color] na realidade, o grupo foi perseguido por uma criatura.
+	> A criatura demonstrava traços de inteligência e se revelou ser um eco de Chadwick (Aluno desaparecido).
+	> Logo após, a unidade [color=#ffc0cb]Dyane[/color] integrou-se ao grupo.
+	""",
 
-	"""[center][b][color=green]EVENTO: RITUAL NO SHOW DE ROCK[/color][/b][/center]
+		"""[center][b][color=green]EVENTO: RITUAL NO SHOW DE ROCK[/color][/b][/center]
 
-> Primeiro contato com rituais no show de [u]Mike[/u] (irmão de [color=#ff0000]Joshua[/color]). 
-> O grupo encontrou o [b]Grupo das Chaves[/b] e o indivíduo [u]Rowan[/u], que invocou [color=#008080][b]Vetor[/b][/color] (A Coisa Angular).
+	> Primeiro contato com rituais no show de [u]Mike[/u] (irmão de [color=#ff0000]Joshua[/color]). 
+	> O grupo encontrou o [b]Grupo das Chaves[/b] e o indivíduo [u]Rowan[/u], que invocou [color=#008080][b]Vetor[/b][/color] (A Coisa Angular).
 
-[center][b][color=green]SUB-ARQUIVO: OSCAR E O OBSERVADOR[/color][/b][/center]
+	[center][b][color=green]SUB-ARQUIVO: OSCAR E O OBSERVADOR[/color][/b][/center]
 
-> O sujeito [color=#ffff00]Oscar[/color] foi comprometido pela influência da entidade [b]Observador[/b]. 
-> O conflito resultou na [color=#ff0000]BAIXA DEFINITIVA[/color] de [color=#ffff00]Oscar[/color] e na perda do olho de [color=#ffff00]Shane[/color].
-""",
+	> O sujeito [color=#ffff00]Oscar[/color] foi comprometido pela influência da entidade [b]Observador[/b]. 
+	> O conflito resultou na [color=#ff0000]BAIXA DEFINITIVA[/color] de [color=#ffff00]Oscar[/color] e na perda do olho de [color=#ffff00]Shane[/color].
+	""",
 
-	"""[center][b][color=green]INVESTIGAÇÃO: HOSPITAL E FAROL[/color][/b][/center]
+		"""[center][b][color=green]INVESTIGAÇÃO: HOSPITAL E FAROL[/color][/b][/center]
 
-> Contato via telefone com o hospital. A ligação se originava do passado/futuro. 
-> Introdução do sujeito [color=#a020f0]Walt[/color], filho do Diretor Crawford. 
-> A busca por [u]Chadwick[/u] revelou operações da [u][b]OSKOFF[/b][/u].
-> Derrota de um dos Doutores em estado de insanidade. [color=#ffc0cb][b]Cataclise[/b][/color].
-""",
+	> Contato via telefone com o hospital. A ligação se originava do passado/futuro. 
+	> Introdução do sujeito [color=#a020f0]Walt[/color], filho do Diretor Crawford. 
+	> A busca por [u]Chadwick[/u] revelou operações da [u][b]OSKOFF[/b][/u].
+	> Derrota de um dos Doutores em estado de insanidade. [color=#ffc0cb][b]Cataclise[/b][/color].
+	""",
 
-"""[center][b][color=green]SUB-ARQUIVO: MANSÃO DETERIORADA[/color][/b][/center]
+	"""[center][b][color=green]SUB-ARQUIVO: MANSÃO DETERIORADA[/color][/b][/center]
 
-> Atividade detectada na residência de [color=#ffff00]Shane[/color]. 
-> Um usuário das Chaves foi derrotado com suporte do Padre Malthus. 
-> Nesta operação, [color=#a020f0]Walt[/color] conseguiu sua própria [b]Chave de Entropia[/b].
-""",
+	> Atividade detectada na residência de [color=#ffff00]Shane[/color]. 
+	> Um usuário das Chaves foi derrotado com suporte do Padre Malthus. 
+	> Nesta operação, [color=#a020f0]Walt[/color] conseguiu sua própria [b]Chave de Entropia[/b].
+	""",
 
-	"""[center][color=#00ff00][b]ARQUIVO: CONFLITO URBANO[/b][/color][/center]
+		"""[center][color=#00ff00][b]ARQUIVO: CONFLITO URBANO[/b][/color][/center]
 
-> A chegada do aluno [color=#90ee90]Ted[/color] levou o grupo ao encontro de uma gangue de tráfico de drogas.
+	> A chegada do aluno [color=#90ee90]Ted[/color] levou o grupo ao encontro de uma gangue de tráfico de drogas.
 
-[center][color=#ff0000][b]ALERTA DE BAIXA:[/b][/color][/center]
-> Durante o embate, o hospedeiro [color=#add8e6]Senise (Oliver)[/color] foi neutralizado após se jogar contra disparos de escopeta.
-""",
+	[center][color=#ff0000][b]ALERTA DE BAIXA:[/b][/color][/center]
+	> Durante o embate, o hospedeiro [color=#add8e6]Senise (Oliver)[/color] foi neutralizado após se jogar contra disparos de escopeta.
+	""",
 
-"""
-[center][b][color=green]SUB-ARQUIVO: CHAVE DE HEMOGEIA[/color][/b][/center]
+	"""
+	[center][b][color=green]SUB-ARQUIVO: CHAVE DE HEMOGEIA[/color][/b][/center]
 
-> Minutos após o embate, surgiu [u]Mira[/u] com a Chave de Hemogeia. 
-> O grupo foi levado para seu domínio de [color=red]Hemogeia[/color], mas a ameaça foi contida e [color=#a020f0]Walt[/color] a trouxe para o lado da equipe.
-""",
+	> Minutos após o embate, surgiu [u]Mira[/u] com a Chave de Hemogeia. 
+	> O grupo foi levado para seu domínio de [color=red]Hemogeia[/color], mas a ameaça foi contida e [color=#a020f0]Walt[/color] a trouxe para o lado da equipe.
+	""",
 
-	"""[center][b][color=green]INCIDENTE: POLENTINHA[/color][/b][/center]
+		"""[center][b][color=green]INCIDENTE: POLENTINHA[/color][/b][/center]
 
-[center]Localização: Pizzaria ([u]Emprego de Mike[/u]).[/center] 
-> Identificada a presença do [u][b][color=red]RATO[/color][/b][/u].
-> [b]PROTOCOLO DE SOBREVIVÊNCIA:[/b] Sobreviver a 5 noites contra o Polentinha.
+	[center]Localização: Pizzaria ([u]Emprego de Mike[/u]).[/center] 
+	> Identificada a presença do [u][b][color=red]RATO[/color][/b][/u].
+	> [b]PROTOCOLO DE SOBREVIVÊNCIA:[/b] Sobreviver a 5 noites contra o Polentinha.
 
-[center][b][color=green]O INCÊNDIO[/color][/b][/center]
+	[center][b][color=green]O INCÊNDIO[/color][/b][/center]
 
-> O [u][b]Rato[/b][/u] eliminou uma das Chaves. O local foi incinerado com apoio de [u]Alex[/u]. 
-> [color=#ff0000]Joshua[/color] e [u]Mike[/u] ficaram presos nas chamas, sobrevivendo por pouco.""",
+	> O [u][b]Rato[/b][/u] eliminou uma das Chaves. O local foi incinerado com apoio de [u]Alex[/u]. 
+	> [color=#ff0000]Joshua[/color] e [u]Mike[/u] ficaram presos nas chamas, sobrevivendo por pouco.""",
 
-"""[center][color=#00ff00][b]DESCOBERTA: LIGAÇÃO COM A OSKOFF[/b][/color][/center]
+	"""[center][color=#00ff00][b]DESCOBERTA: LIGAÇÃO COM A OSKOFF[/b][/color][/center]
 
-> O sujeito [color=#008080]Owen Parker[/color] descobriu que seu pai está ligado à [u][b]OSKOFF[/b][/u].
-> Infiltração em laboratório nos esgotos revelou experimentos em humanos e criaturas. 
+	> O sujeito [color=#008080]Owen Parker[/color] descobriu que seu pai está ligado à [u][b]OSKOFF[/b][/u].
+	> Infiltração em laboratório nos esgotos revelou experimentos em humanos e criaturas. 
 
-[center][b][color=green]SUB-ARQUIVO: ORIGEM DE SHANE[/color][/b][/center]
+	[center][b][color=green]SUB-ARQUIVO: ORIGEM DE SHANE[/color][/b][/center]
 
-> Dados indicam que [color=#ffff00]Shane[/color] é um produto de experimentação da [u][b]OSKOFF[/b][/u], com envolvimento direto de seus pais nas operações corporativas.""",
+	> Dados indicam que [color=#ffff00]Shane[/color] é um produto de experimentação da [u][b]OSKOFF[/b][/u], com envolvimento direto de seus pais nas operações corporativas.""",
 
-	"""[center][color=#00ff00][b]> RELATÓRIO FINAL: CASO WENDIGO[/b][/color][/center]
+		"""[center][color=#00ff00][b]> RELATÓRIO FINAL: CASO WENDIGO[/b][/color][/center]
 
-> Chegada do aluno [color=#add8e6]John[/color]. 
-> O grupo deslocou-se para o vilarejo de [color=#ffc0cb]Dyane[/color] para conter instabilidades vindas do [color=#4b0082][b]Umbral[/b][/color].
+	> Chegada do aluno [color=#add8e6]John[/color]. 
+	> O grupo deslocou-se para o vilarejo de [color=#ffc0cb]Dyane[/color] para conter instabilidades vindas do [color=#4b0082][b]Umbral[/b][/color].
 
-[center][b][color=green]SUB-ARQUIVO: WENDIGO[/color][/b][/center]
+	[center][b][color=green]SUB-ARQUIVO: WENDIGO[/color][/b][/center]
 
-> Derrota da entidade classe [u][b]Wendigo[/b][/u] após cruzamento entre a realidade e o [color=#4b0082][b]Umbral[/b][/color].
-> Neste evento, a unidade [color=#ffc0cb]Dyane[/color] revelou-se portadora da Chave de [color=#ffc0cb][b]Cataclise[/b][/color].""",
+	> Derrota da entidade classe [u][b]Wendigo[/b][/u] após cruzamento entre a realidade e o [color=#4b0082][b]Umbral[/b][/color].
+	> Neste evento, a unidade [color=#ffc0cb]Dyane[/color] revelou-se portadora da Chave de [color=#ffc0cb][b]Cataclise[/b][/color].""",
 
-"""
-[center][color=green]FIM DOS REGISTROS DE MISSÕES.[/color][/center]
+	"""
+	[center][color=green]FIM DOS REGISTROS DE MISSÕES.[/color][/center]
 
-[center][color=green]Adicionar mais logs[/color][/center]
+	[center][color=green]Adicionar mais logs[/color][/center]
 
-[center][color=green]Sim[/color][/center][center][color=green]Não[/color][/center]
-"""
+	[center][color=green]Sim[/color][/center][center][color=green]Não[/color][/center]
+	"""
 ]
 
 var esta_escrevendo = false
@@ -257,12 +257,23 @@ func _input(event):
 				current_attach_idx += 1
 				_tocar_som_clique()
 				_update_attachment_display()
-				
 		elif event.is_action_pressed("ui_left"):
 			if current_attach_idx > 0:
 				current_attach_idx -= 1
 				_tocar_som_clique()
 				_update_attachment_display()
+
+	elif pages["logs"].visible:
+		if event.is_action_pressed("ui_right"):
+			if current_log_index < log_slides.size() - 1:
+				current_log_index += 1
+				_tocar_som_clique()
+				_update_log_text()
+		elif event.is_action_pressed("ui_left"):
+			if current_log_index > 0:
+				current_log_index -= 1
+				_tocar_som_clique()
+				_update_log_text()
 
 func _change_log_slide(dir):
 	current_log_index = clampi(current_log_index + dir, 0, log_slides.size() - 1)
@@ -273,6 +284,10 @@ func _update_log_text():
 	if page_logs:
 		var footer = "\n\n[center][color=green]PÁGINA " + str(current_log_index + 1) + " / " + str(log_slides.size()) + "[/color][/center]"
 		page_logs.text = log_slides[current_log_index] + footer
+		page_logs.visible_ratio = 0
+		var tween = get_tree().create_tween()
+		tween.tween_property(page_logs, "visible_ratio", 1.0, 0.8)
+		_iniciar_som_binario(0.8)
 
 func _on_btn_attachments_pressed():
 	current_attach_idx = 0
@@ -281,7 +296,7 @@ func _on_btn_attachments_pressed():
 
 func _update_attachment_display():
 	if not page_attachments or not anexo_img or not anexo_txt:
-		print("ERRO: Hierarquia de anexos não encontrada!")
+		print("ERRO")
 		return
 
 	var data = attachment_data[current_attach_idx]
@@ -294,7 +309,7 @@ func _update_attachment_display():
 		
 	if data["texto"] != "":
 		anexo_txt.visible = true
-		anexo_txt.text = data["texto"]
+		anexo_txt.text = data["texto"] + "\n\n[center][color=green]PÁGINA " + str(current_attach_idx + 1) +" / " + str(attachment_data.size()) + "[/color][/center]"
 		anexo_txt.visible_ratio = 0
 		var tween = get_tree().create_tween()
 		tween.tween_property(anexo_txt, "visible_ratio", 1.0, 0.8)

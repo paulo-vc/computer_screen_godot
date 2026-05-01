@@ -296,22 +296,22 @@ theme_override_fonts/bold_font = ExtResource("6_tereu")
 theme_override_font_sizes/normal_font_size = 32
 theme_override_font_sizes/bold_font_size = 40
 bbcode_enabled = true
-text = "[center][b][color=#00FF41]STATUS DEFENSORES[/color][/b][/center]
+text = "[center][b][color=#00FF41]STATUS DEFENSORES[/color][/b]
 
 [color=#00FF41]OPERACIONAIS ATIVOS:[/color]
-> DYANE [VIVA]
-> JOHN [VIVO]
-> JOSHUA [VIVO]
-> MARIANA [VIVA]
-> OWEN [VIVO]
-> SERAPHYNE [VIVA]
-> SHANE [VIVO]
+> DYANE [color=green][VIVA][/color]
+> JOHN [color=green][VIVO][/color]
+> JOSHUA [color=green][VIVO][/color]
+> MARIANA [color=green][VIVA][/color]
+> OWEN [color=green][VIVO][/color]
+> SERAPHYNE [color=green][VIVA][/color]
+> SHANE [color=green][VIVO][/color]
 
 [color=#FF3131]CONEXÃO PERDIDA:[/color]
-> OLIVER/SENISE [MORTO]
-> OSCAR [MORTO]
-> TED [MORTO]
-> WALT [MORTO]"
+> OLIVER/SENISE [color=red][MORTO][/color]
+> OSCAR [color=red][MORTO][/color]
+> TED [color=red][MORTO][/color]
+> WALT [color=red][MORTO][/color][/center]"
 
 [node name="PageLogs" type="RichTextLabel" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control" unique_id=1705304904]
 visible = false
@@ -355,6 +355,16 @@ stretch_mode = 5
 layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("6_tereu")
+theme_override_fonts/bold_font = ExtResource("6_tereu")
+theme_override_fonts/bold_italics_font = ExtResource("6_tereu")
+theme_override_fonts/italics_font = ExtResource("6_tereu")
+theme_override_fonts/mono_font = ExtResource("6_tereu")
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+theme_override_font_sizes/bold_italics_font_size = 28
+theme_override_font_sizes/italics_font_size = 28
+theme_override_font_sizes/mono_font_size = 28
 bbcode_enabled = true
 
 [node name="ClickSFX" type="AudioStreamPlayer" parent="Computer/SubViewport/Control" unique_id=2039581358]
