@@ -6,7 +6,6 @@ extends SpotLight3D
 
 func _process(_delta):
 	if randf() < flicker_chance:
-		# No Godot 4, usamos light_energy
 		light_energy = randf_range(min_energy, max_energy)
 	else:
 		light_energy = max_energy
