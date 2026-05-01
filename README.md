@@ -17,9 +17,7 @@ This system serves as the primary interface for players to navigate confidential
 * **Language:** GDScript
 * **Styling:** Advanced BBCode (RichTextLabel) and custom GLSL Shaders.
 
----
-
-### Credits & Development:
+## Credits & Development:
 This project was developed by me, including all scene construction, the primary Control, Light and Camera scripts, sound design, light composition, and the computer model (modeling and texturing). Third-party assets include the keyboard model by Diego Clemente (via Sketchfab), the CRT/monitor shaders by banwarfarms (via Godotshaders.com), and the interactive viewport script by Benjamin Manner, which enables the mouse-to-screen interaction. All lore and terminal content are based on a private tabletop RPG campaign.
 
 ## Getting Started
