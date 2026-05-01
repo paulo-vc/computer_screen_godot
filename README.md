@@ -21,3 +21,6 @@ This system serves as the primary interface for players to navigate confidential
 2. Clone this repository:
    ```bash
    git clone https://github.com/paulo-vc/computer_screen_godot
+
+<img width="1152" height="648" alt="codex_system_hgKL0oSdWy" src="https://github.com/user-attachments/assets/1f234e61-ccb1-467b-87b1-2b8a22e218dc" />
+<img width="1152" height="648" alt="codex_system_hjiZQx2DSf" src="https://github.com/user-attachments/assets/8a08f4ef-a547-46d4-957d-36501d0c4809" />
