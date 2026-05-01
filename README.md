@@ -26,7 +26,7 @@ This project was developed by me, including all scene construction, the primary 
 1. Ensure you have **Godot 4.x** installed.
 2. Clone this repository:
    ```bash
-   git clone [https://github.com/paulo-vc/computer_screen_godot](https://github.com/paulo-vc/computer_screen_godot)
+   git clone https://github.com/paulo-vc/computer_screen_godot
 
 <img width="1152" height="648" alt="codex_system_hgKL0oSdWy" src="https://github.com/user-attachments/assets/5df7ce84-9947-4324-9482-1dc23bd7f6ae" />
 <img width="1152" height="648" alt="codex_system_hjiZQx2DSf" src="https://github.com/user-attachments/assets/1dcbb462-e897-433d-ac6f-83f275039fcb" />
