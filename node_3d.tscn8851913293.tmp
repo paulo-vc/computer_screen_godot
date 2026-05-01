@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://q7mo41m70yyf" path="res://computer.gd" id="1_noarx"]
 [ext_resource type="Texture2D" uid="uid://cgpl8harra8ep" path="res://assets/plastic-texture2.jpg" id="2_i5arm"]
+[ext_resource type="Texture2D" uid="uid://cwpbe7jss8o06" path="res://assets/testing/img1.png" id="3_4arys"]
 [ext_resource type="Script" uid="uid://cvsgbn3x51hyl" path="res://control.gd" id="3_6iypd"]
 [ext_resource type="Script" uid="uid://dme4efv6gtju3" path="res://player_camera.gd" id="3_a0tk4"]
+[ext_resource type="Texture2D" uid="uid://bfppma2m782kk" path="res://assets/testing/img2.png" id="3_jsk3o"]
 [ext_resource type="Shader" uid="uid://be8ub440872eu" path="res://node_3d.gdshader" id="3_r3fl7"]
 [ext_resource type="AudioStream" uid="uid://dpi3502a2tg66" path="res://assets/bg_ost.mp3" id="5_jka67"]
-[ext_resource type="AudioStream" uid="uid://b35sn83gtkxjk" path="res://assets/mouseclick.mp3" id="5_tereu"]
-[ext_resource type="AudioStream" uid="uid://dw68j1g0m5aih" path="res://assets/binary.mp3" id="6_cdqbm"]
 [ext_resource type="FontFile" uid="uid://dqm3rbefgd8dl" path="res://assets/windows-xp-tahoma.otf" id="6_tereu"]
 [ext_resource type="PackedScene" uid="uid://bl06ylxt6govy" path="res://assets/vintage_keyboard.glb" id="7_wc5p8"]
 [ext_resource type="Script" uid="uid://dl36rl8rocvfm" path="res://ceilling_light.gd" id="8_jsk3o"]
@@ -36,28 +36,27 @@ data = PackedVector3Array(0.19999999, -0.14999999, 0, -0.19999999, -0.14999999, 
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jka67"]
 shader = ExtResource("3_r3fl7")
-shader_parameter/brightness = 1.02
-shader_parameter/contrast = 1.08
-shader_parameter/saturation = 1.1
-shader_parameter/gamma = 1.05
-shader_parameter/curvature = 0.026000001235
-shader_parameter/corner_soften = 0.06
-shader_parameter/vignette = 0.38
-shader_parameter/scanline_strength = 0.114000005415
-shader_parameter/scanline_density = 3.0
-shader_parameter/interlace_strength = 0.2
-shader_parameter/mask_strength = 0.22
-shader_parameter/mask_scale = 1.0
-shader_parameter/chroma_offset_px = 1.6
-shader_parameter/luma_smear_px = 2.2
-shader_parameter/jitter_px = 0.0
-shader_parameter/wobble_px = 0.54800002603
-shader_parameter/tape_noise = 0.22
-shader_parameter/tape_lines = 0.35
-shader_parameter/roll_speed = 0.925
-shader_parameter/roll_strength = 0.1850000087875
-shader_parameter/glow_strength = 0.25
-shader_parameter/glow_threshold = 0.65
+shader_parameter/overlay = false
+shader_parameter/scanlines_opacity = 0.0930000044175
+shader_parameter/scanlines_width = 0.25
+shader_parameter/grille_opacity = 0.3
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = false
+shader_parameter/roll = false
+shader_parameter/roll_speed = 8.0
+shader_parameter/roll_size = 0.714000033915
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.05
+shader_parameter/noise_opacity = 0.400000019
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.0550000026125
+shader_parameter/aberration = 0.00100004754750004
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 0.0
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jka67"]
 resource_name = "Material"
@@ -279,7 +278,7 @@ text = "
 
 
 
-[center]SISTEMA CODEX V.1.0
+[center]SISTEMA ARKHAM V.1.04
 AGUARDANDO COMANDO...[/center]."
 
 [node name="PageMonitor" type="RichTextLabel" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control" unique_id=37926780]
@@ -313,7 +312,7 @@ text = "[center][b][color=#00FF41]STATUS DEFENSORES[/color][/b][/center]
 > TED [MORTO]
 > WALT [MORTO]"
 
-[node name="PageLogs" type="RichTextLabel" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control" unique_id=1705304904]
+[node name="PageAttachments" type="RichTextLabel" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control" unique_id=1920353059]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -322,6 +321,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+text = "fdghdfgfgd"
+
+[node name="Control" type="Control" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control" unique_id=1794445910]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control/Control" unique_id=1639610298]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PageLogs" type="RichTextLabel" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control/Control/VBoxContainer" unique_id=1479609819]
+visible = false
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.29803923, 1, 0.14117648, 1)
 theme_override_fonts/normal_font = ExtResource("6_tereu")
 theme_override_fonts/bold_font = ExtResource("6_tereu")
 theme_override_fonts/bold_italics_font = ExtResource("6_tereu")
@@ -334,36 +353,9 @@ theme_override_font_sizes/italics_font_size = 32
 theme_override_font_sizes/mono_font_size = 32
 bbcode_enabled = true
 
-[node name="PageAttachments" type="MarginContainer" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control" unique_id=1071503840]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control/PageAttachments" unique_id=456497424]
+[node name="PageLabel" type="Label" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control/Control/VBoxContainer" unique_id=563792092]
 layout_mode = 2
-
-[node name="DisplayImages" type="TextureRect" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control/PageAttachments/VBoxContainer" unique_id=1771501645]
-custom_minimum_size = Vector2(0, 300)
-layout_mode = 2
-expand_mode = 1
-stretch_mode = 5
-
-[node name="DisplayText" type="RichTextLabel" parent="Computer/SubViewport/Control/VBoxContainer/MarginContainer2/Control/PageAttachments/VBoxContainer" unique_id=1523219740]
-layout_mode = 2
-size_flags_vertical = 3
-mouse_filter = 2
-bbcode_enabled = true
-
-[node name="ClickSFX" type="AudioStreamPlayer" parent="Computer/SubViewport/Control" unique_id=2039581358]
-stream = ExtResource("5_tereu")
-volume_db = -15.208
-
-[node name="BinarySFX" type="AudioStreamPlayer" parent="Computer/SubViewport/Control" unique_id=1486241083]
-stream = ExtResource("6_cdqbm")
-volume_db = -28.944
+horizontal_alignment = 1
 
 [node name="ColorRect" type="ColorRect" parent="Computer/SubViewport" unique_id=1594787251]
 material = SubResource("ShaderMaterial_jka67")
@@ -393,7 +385,7 @@ environment = SubResource("Environment_jka67")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2048129808]
 stream = ExtResource("5_jka67")
-volume_db = -20.388
+volume_db = -15.973
 autoplay = true
 
 [node name="ceilling light" type="SpotLight3D" parent="." unique_id=461761285]
@@ -432,12 +424,14 @@ current_tab = 0
 
 [node name="TextureRect" type="TextureRect" parent="BackupMethod" unique_id=3340784]
 layout_mode = 2
+texture = ExtResource("3_4arys")
 expand_mode = 1
 metadata/_tab_index = 0
 
 [node name="TextureRect2" type="TextureRect" parent="BackupMethod" unique_id=971666640]
 visible = false
 layout_mode = 2
+texture = ExtResource("3_jsk3o")
 expand_mode = 1
 metadata/_tab_index = 1
 
