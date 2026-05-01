@@ -5,18 +5,18 @@ An interactive terminal system developed in **Godot 4**, simulating a vintage CR
 ## About
 This system serves as the primary interface for players to navigate confidential files, monitor high-interest subjects, and analyze evidence related to the **Umbral** and the **Keys**.
 
-### Key Features:
+### Features:
 *   **Multi-Page Navigation:** Seamlessly switch between Home, Logs, Monitoring, and Attachments.
 *   **Dynamic Typewriter Effect:** Text renders in real-time with synchronized binary sound effects.
 *   **Evidence Gallery:** Supports image and document viewing with built-in pagination.
 *   **Retro Aesthetic:** High-contrast monochromatic (Teal/Green) interface featuring scanlines and CRT distortion shaders.
 
-## 🛠️ Tech Stack
+## Tech Stack
 *   **Engine:** Godot 4.x
 *   **Language:** GDScript
 *   **Styling:** Advanced BBCode (RichTextLabel) and custom GLSL Shaders.
 
-## 🚀 Getting Started
+## Getting Started
 1. Ensure you have **Godot 4.x** installed.
 2. Clone this repository:
    ```bash
